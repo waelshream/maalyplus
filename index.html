@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaalyPlus - منصة المقارنة المالية الذكية</title>
+    
+    <meta name="description" content="قارن واختر أفضل البطاقات الائتمانية والقروض وتمويل السيارات من 15+ بنك في مكان واحد. وفّر المال والوقت مع MaalyPlus.">
+
+    <meta property="og:title" content="MaalyPlus - منصة المقارنة المالية الذكية">
+    <meta property="og:description" content="قارن واختر أفضل البطاقات الائتمانية والقروض وتمويل السيارات. قرارات مالية أذكى تبدأ من هنا.">
+    <meta property="og:image" content="images/social-share-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">M+</span>
+                    MaalyPlus
+                </a>
+                
+                <nav class="nav" id="nav-menu">
+                    <a href="index.html" class="nav-link active">الرئيسية</a>
+                    <a href="cards/cards.html" class="nav-link">البطاقات</a>
+                    <a href="loans/loans.html" class="nav-link">القروض</a>
+                    <a href="car-financing/car-financing.html" class="nav-link">تمويل السيارات</a>
+                    <a href="compare/compare.html" class="nav-link">المقارنة</a>
+                    <a href="calculators/calculators.html" class="nav-link">الحاسبات</a>
+                    <a href="education/education.html" class="nav-link">المدونة</a>
+                </nav>
+
+                <a href="compare/compare.html" class="btn btn-primary">ابدأ الآن</a>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="فتح القائمة">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                            <span>منصة المقارنة المالية #1</span>
+                        </div>
+                        <h1>قرارات مالية <span class="gradient-text">ذكية</span><br>تبدأ من هنا</h1>
+                        
+                        <div class="country-selector">
+                            <span class="country-selector-label">اختر دولتك</span>
+                            <div class="country-tabs">
+                                <button class="country-tab active">
+                                    <img src="https://flagcdn.com/w40/jo.png" alt="علم الأردن">
+                                    <span>الأردن</span>
+                                </button>
+                                <button class="country-tab soon" id="sa-tab">
+                                    <img src="https://flagcdn.com/w40/sa.png" alt="علم السعودية">
+                                    <span>السعودية</span>
+                                    <small>قريباً</small>
+                                </button>
+                                <button class="country-tab soon" id="iq-tab">
+                                    <img src="https://flagcdn.com/w40/iq.png" alt="علم العراق">
+                                    <span>العراق</span>
+                                    <small>قريباً</small>
+                                </button>
+                                <button class="country-tab soon" id="eg-tab">
+                                    <img src="https://flagcdn.com/w40/eg.png" alt="علم مصر">
+                                    <span>مصر</span>
+                                    <small>قريباً</small>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="subheading">قارن واختر أفضل البطاقات الائتمانية والقروض من 15+ بنك في مكان واحد. وفّر المال والوقت مع MaalyPlus.</p>
+                        <div class="smart-search">
+                            <input type="text" id="searchInput" placeholder="ابحث عن بطاقة ائتمانية، قرض، أو أي منتج مالي...">
+                            <button class="btn btn-primary" id="searchBtn">بحث</button>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#featured-products" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9-9-1.8-9-9 1.8-9 9-9Z"></path><path d="M8 15.5c.5.5 1.2.5 1.7 0l4.6-4.6c.5-.5.5-1.2 0-1.7l-4.6-4.6c-.5-.5-1.2-.5-1.7 0l-4.6 4.6c-.5.5-.5 1.2 0 1.7l4.6 4.6Z"></path></svg>
+                                قارن الآن
+                            </a>
+                            <a href="calculators/calculators.html" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><line x1="8" y1="10" x2="8" y2="18"></line><line x1="12" y1="10" x2="12" y2="18"></line></svg>
+                                حاسبة القروض
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-visual fade-in">
+                       <img src="images/hero-illustration.jpg" alt="مقارنة البطاقات الائتمانية والقروض" class="hero-card-mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="stats-bar fade-in">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-goal="10000">0+</div>
+                        <div class="stat-label">مستخدم سعيد</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-goal="15">0+</div>
+                        <div class="stat-label">بنك شريك</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-goal="80">0+</div>
+                        <div class="stat-label">منتج مالي</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-goal="95">0%</div>
+                        <div class="stat-label">نسبة الرضا</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>خدماتنا المالية الذكية</h2>
+                    <p>كل ما تحتاجه لاتخاذ قرارات مالية صحيحة في مكان واحد</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon icon-blue"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></div>
+                        <h3>بطاقات ائتمانية</h3>
+                        <p>قارن بين أكثر من 50 بطاقة ائتمانية واختر الأنسب لك</p>
+                        <div class="badge">50+ متوفر</div>
+                        <a href="cards/cards.html" class="card-link">اكتشف المزيد →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon icon-green"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+                        <h3>قروض شخصية</h3>
+                        <p>احصل على أفضل عروض القروض بأقل نسبة فائدة</p>
+                        <div class="badge">30+ متوفر</div>
+                        <a href="loans/loans.html" class="card-link">اكتشف المزيد →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon icon-purple"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><line x1="8" y1="10" x2="8" y2="18"></line><line x1="12" y1="10" x2="12" y2="18"></line></svg></div>
+                        <h3>حاسبات تفاعلية</h3>
+                        <p>خطط لأهدافك المالية باستخدام أدواتنا الذكية</p>
+                        <div class="badge">10+ أداة</div>
+                        <a href="calculators/calculators.html" class="card-link">اكتشف المزيد →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon icon-orange"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+                        <h3>تثقيف مالي</h3>
+                        <p>تعلم أساسيات المال والاستثمار من خبرائنا</p>
+                        <div class="badge">100+ مقال</div>
+                        <a href="education/education.html" class="card-link">اكتشف المزيد →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section how-it-works">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>كيف يعمل MaalyPlus؟</h2>
+                    <p>ثلاث خطوات بسيطة للوصول إلى أفضل منتج مالي</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-item fade-in">
+                        <div class="step-icon">
+                            <div class="step-number">1</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h3>ابحث وقارن</h3>
+                        <p>استخدم أدواتنا الذكية لاستكشاف ومقارنة عشرات المنتجات المالية فوراً.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon">
+                            <div class="step-number">2</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3>اختر الأنسب</h3>
+                        <p>شاهد كل التفاصيل بوضوح واختر البطاقة أو القرض الذي يلبي احتياجاتك تماماً.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon">
+                            <div class="step-number">3</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3>قدم الطلب</h3>
+                        <p>نوجهك لتقديم طلبك للبنك مباشرة بكل سهولة وأمان.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured-products" id="featured-products">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>أفضل العروض المالية هذا الشهر</h2>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card fade-in">
+                        <div class="product-header">
+                            <div>
+                                <h4>بطاقة الكاش باك</h4>
+                                <span>⭐⭐⭐⭐⭐ (4.9/5)</span>
+                            </div>
+                            <img src="images/bank-logo-1.png" alt="شعار البنك" class="bank-logo" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <ul class="product-features">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> 5% كاش باك على المشتريات</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> رسوم سنوية: مجاناً للسنة الأولى</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> حد ائتماني يصل إلى 20,000 دينار</li>
+                            </ul>
+                        </div>
+                        <div class="product-footer">
+                            <a href="compare/compare.html" class="btn btn-primary">قارن الآن</a>
+                        </div>
+                    </div>
+                     <div class="product-card fade-in">
+                        <div class="product-header">
+                            <div>
+                                <h4>القرض الشخصي السريع</h4>
+                                <span>⭐⭐⭐⭐⭐ (4.8/5)</span>
+                            </div>
+                            <img src="images/bank-logo-2.png" alt="شعار البنك" class="bank-logo" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <ul class="product-features">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> نسبة فائدة تبدأ من 3.5%</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> تمويل يصل إلى 70,000 دينار</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> بدون كفيل</li>
+                            </ul>
+                        </div>
+                        <div class="product-footer">
+                            <a href="loans/loans.html" class="btn btn-primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                     <div class="product-card fade-in">
+                        <div class="product-header">
+                            <div>
+                                <h4>بطاقة أميال السفر</h4>
+                                <span>⭐⭐⭐⭐ (4.5/5)</span>
+                            </div>
+                            <img src="images/bank-logo-3.png" alt="شعار البنك" class="bank-logo" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <ul class="product-features">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> 10,000 ميل ترحيبي</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> دخول مجاني لصالات المطارات</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg> تأمين سفر مجاني</li>
+                            </ul>
+                        </div>
+                        <div class="product-footer">
+                            <a href="cards/cards.html" class="btn btn-primary">قارن الآن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>ماذا يقول عملاؤنا؟</h2>
+                    <p>آلاف المستخدمين السعداء يثقون بنا يومياً</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"منصة رائعة وفرت علي الكثير من الوقت والجهد. تمكنت من إيجاد أفضل قرض شخصي بأقل فائدة خلال دقائق!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-1.jpg" alt="أحمد محمود" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h4>أحمد محمود</h4>
+                                <span>مهندس</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"أداة المقارنة سهلة جداً وواضحة. ساعدتني في اختيار بطاقة الكاش باك المناسبة لنمط حياتي. أنصح به بشدة."</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-2.jpg" alt="سارة خليل" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h4>سارة خليل</h4>
+                                <span>مديرة تسويق</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"كنت أبحث عن تمويل لسيارتي الجديدة، وMaalyPlus قدم لي كل الخيارات المتاحة بطريقة مبسطة. خدمة ممتازة."</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-3.jpg" alt="عمر حداد" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h4>عمر حداد</h4>
+                                <span>رائد أعمال</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>الأسئلة الشائعة</h2>
+                    <p>لديك أسئلة؟ لدينا الأجوبة. كل ما تحتاج معرفته للبدء.</p>
+                </div>
+                <div class="faq-container fade-in">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل خدمة MaalyPlus مجانية؟</span>
+                            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، جميع خدمات المقارنة والبحث على منصتنا مجانية تماماً للمستخدمين. نحن نساعدك على توفير المال بدون أي تكلفة عليك.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>كيف تختارون أفضل المنتجات المالية؟</span>
+                            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نحن نستخدم خوارزميات ذكية تقوم بتحليل جميع العروض المتاحة من شركائنا البنكيين بناءً على عدة عوامل مثل نسبة الفائدة، الرسوم، الميزات، ومتطلبات التقديم، لنقدم لك الخيارات الأكثر ملاءمة لاحتياجاتك.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل معلوماتي الشخصية آمنة معكم؟</span>
+                            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>أمان معلوماتك هو أولويتنا القصوى. نحن لا نشارك بياناتك الشخصية مع أي طرف ثالث دون موافقتك. عملية التقديم تتم مباشرة عبر المواقع الآمنة للبنوك الشريكة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>نتعاون مع أفضل البنوك والمؤسسات المالية</h2>
+                </div>
+                <div class="partners-logos fade-in">
+                    <img src="images/partner-logo-1.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                    <img src="images/partner-logo-2.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                    <img src="images/partner-logo-3.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                    <img src="images/partner-logo-4.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                    <img src="images/partner-logo-5.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                    <img src="images/partner-logo-6.png" alt="شعار شريك" class="partner-logo" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <div class="container fade-in">
+                <h2>جاهز لاتخاذ قرار مالي ذكي؟</h2>
+                <p>انضم لآلاف المستخدمين الذين يوفرون المال والوقت مع MaalyPlus</p>
+                <a href="compare/compare.html" class="btn">ابدأ المقارنة الآن</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">M+</span>
+                        MaalyPlus
+                    </a>
+                    <p>منصة المقارنة المالية الذكية الأولى.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">اشترك في نشرتنا</h4>
+                    <p>كن أول من يعرف عن آخر العروض والنصائح المالية.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="أدخل بريدك الإلكتروني" required>
+                        <button type="submit">اشترك الآن</button>
+                    </form>
+                </div>
+                <div class="footer-col">
+                    <h4>خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="cards/cards.html">البطاقات الائتمانية</a></li>
+                        <li><a href="loans/loans.html">القروض الشخصية</a></li>
+                        <li><a href="car-financing/car-financing.html">تمويل السيارات</a></li>
+                        <li><a href="calculators/calculators.html">الحاسبات المالية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+    <h4>روابط سريعة</h4>
+    <ul class="footer-links">
+         <li><a href="about-us.html">من نحن</a></li>
+         <li><a href="contact.html">تواصل معنا</a></li>
+         <li><a href="education/education.html">المدونة</a></li>
+         <li><a href="#faq">الأسئلة الشائعة</a></li>
+    </ul>
+</div>
+                <div class="footer-col">
+                    <h4>قانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="legal/privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="legal/legal.html">الشروط والأحكام</a></li>
+                        <li><a href="legal/legal.html">سياسة الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MaalyPlus. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="soonModal">
+        <div class="modal-content">
+            <h3>قريباً جداً!</h3>
+            <p>نعمل بجهد لإطلاق خدماتنا في هذا البلد. ترقبوا المزيد من التحديثات!</p>
+            <button class="modal-close-btn" id="modalClose">حسنًا</button>
+        </div>
+    </div>
+    
+    <a href="#header" class="back-to-top" id="back-to-top" aria-label="العودة للأعلى">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+
+
+    <script>
+        // --- Staggered Fade-in Animation on Scroll ---
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const fadeInObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const parentGrid = entry.target.closest('.services-grid, .products-grid, .testimonials-grid, .steps-container');
+                    if (parentGrid) {
+                        const delay = Array.from(entry.target.parentElement.children).indexOf(entry.target) * 100;
+                        entry.target.style.transitionDelay = `${delay}ms`;
+                    }
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            fadeInObserver.observe(el);
+        });
+
+        // --- Number Counter Animation ---
+        const statsSection = document.querySelector('.stats-bar');
+        if (statsSection) {
+            const counterObserver = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting) {
+                    document.querySelectorAll('.stat-number').forEach(counter => {
+                        if (counter.classList.contains('animated')) return;
+                        counter.classList.add('animated');
+                        const goal = +counter.dataset.goal;
+                        let start = 0;
+                        const duration = 2000;
+                        const step = () => {
+                            start += goal / (duration / 16);
+                            if (start > goal) start = goal;
+                            const suffix = counter.textContent.includes('+') ? '+' : (counter.textContent.includes('%') ? '%' : '');
+                            counter.textContent = Math.ceil(start) + suffix;
+                            if (start < goal) requestAnimationFrame(step);
+                        };
+                        requestAnimationFrame(step);
+                    });
+                    counterObserver.unobserve(statsSection);
+                }
+            }, { threshold: 0.5 });
+            counterObserver.observe(statsSection);
+        }
+
+        // --- Modal Logic ---
+        const soonModal = document.getElementById('soonModal');
+        const modalTriggers = document.querySelectorAll('#sa-tab, #iq-tab, #eg-tab');
+        const modalCloseBtn = document.getElementById('modalClose');
+        const openModal = () => soonModal && soonModal.classList.add('visible');
+        const closeModal = () => soonModal && soonModal.classList.remove('visible');
+        modalTriggers.forEach(trigger => trigger.addEventListener('click', openModal));
+        if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+        if (soonModal) soonModal.addEventListener('click', e => (e.target === soonModal) && closeModal());
+        
+        // --- Smart Search Logic ---
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const handleSearch = () => {
+            const term = searchInput.value.toLowerCase();
+            if (term.includes('بطاقة') || term.includes('card')) window.location.href = 'cards/cards.html';
+            else if (term.includes('قرض') || term.includes('loan')) window.location.href = 'loans/loans.html';
+            else if (term.includes('سيارة') || term.includes('car')) window.location.href = 'car-financing/car-financing.html';
+            else if (term.includes('حاسبة') || term.includes('calc')) window.location.href = 'calculators/calculators.html';
+            else window.location.href = 'compare/compare.html';
+        };
+        if (searchBtn) searchBtn.addEventListener('click', handleSearch);
+        if (searchInput) searchInput.addEventListener('keypress', e => (e.key === 'Enter') && handleSearch());
+
+        // --- Mobile Menu Logic ---
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        }
+
+        // --- Back to Top Button Logic ---
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                backToTopButton.classList.toggle('visible', window.scrollY > 300);
+            });
+            backToTopButton.addEventListener('click', e => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // --- FAQ Accordion Logic ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // --- Newsletter Form Logic ---
+        const newsletterForm = document.getElementById('newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const emailInput = document.getElementById('newsletter-email');
+                if (emailInput.value) {
+                    alert(`شكراً لاشتراكك: ${emailInput.value}\n(هذه رسالة تجريبية، لم يتم إرسال البيانات)`);
+                    emailInput.value = '';
+                }
+            });
+        }
+    </script>
+
+    <!-- MaalyPlus AI Chatbot -->
+    <script src="chatbot.js"></script>
+</body>
+</html>

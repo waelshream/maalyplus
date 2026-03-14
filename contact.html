@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - MaalyPlus</title>
+    
+    <style>
+        :root {
+            --primary: #123866; --secondary: #2db8b7; --accent: #f6b332;
+            --text-primary: #0f1a2b; --text-secondary: #6b7b94; --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fb; --border: #e6eaf2; --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --radius-lg: 12px; --transition: 300ms ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Cairo', sans-serif;
+            color: var(--text-primary); background: var(--bg-secondary); line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: var(--bg-primary); box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .nav { display: flex; gap: 2rem; align-items: center; }
+        .nav-link { color: var(--text-primary); text-decoration: none; font-weight: 500; }
+        .nav-link.active { color: var(--secondary); font-weight: 700; }
+
+        .page-header { text-align: center; padding: 3rem 0; background: white; }
+        .main-title { color: var(--primary); font-size: 2.5rem; margin-bottom: 1rem; }
+        
+        .contact-section { padding: 3rem 0; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-info h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+        .info-item { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .info-item .icon { font-size: 1.5rem; color: var(--secondary); }
+        .info-item p { margin: 0; color: var(--text-secondary); }
+        
+        .map-container { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); }
+        .map-container iframe { width: 100%; height: 250px; border: 0; }
+
+        .contact-form h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-label { display: block; font-weight: 500; margin-bottom: 0.5rem; }
+        .form-input, .form-textarea { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; }
+        .form-textarea { resize: vertical; min-height: 120px; }
+        .submit-btn {
+            width: 100%; padding: 14px; font-size: 1.1rem; font-weight: 600;
+            background-color: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer;
+            transition: background-color 300ms ease;
+        }
+        .submit-btn:hover { background-color: #e5a22a; }
+
+        @media (max-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr; padding: 2rem; }
+            .nav { display: none; } /* Add responsive nav if needed */
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><img src="images/logo1.png" alt="شعار MaalyPlus" style="height: 48px;"></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="cards/cards.html" class="nav-link">البطاقات</a>
+                <a href="loans/loans.html" class="nav-link">القروض</a>
+                <a href="compare/compare.html" class="nav-link">المقارنة</a>
+                <a href="calculators/calculators.html" class="nav-link">الحاسبات</a>
+                <a href="education/education.html" class="nav-link">التثقيف المالي</a>
+                <a href="contact.html" class="nav-link active">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 class="main-title">اتصل بنا</h1>
+            <p>يسعدنا تواصلك معنا. فريقنا جاهز للإجابة على جميع استفساراتك.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>معلومات التواصل</h3>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <div><strong>البريد الإلكتروني:</strong><p>info@maalyplus.com</p></div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <div><strong>الهاتف:</strong><p>+962 79</p></div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <div><strong>العنوان:</strong><p>شارع الملك عبدالله الثاني، مجمع الحسين للأعمال، عمّان، الأردن</p></div>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216833.9572990621!2d35.76332159840254!3d31.83603677934444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman!5e0!3m2!1sen!2sjo!4v1695825625129!5m2!1sen!2sjo" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>أرسل لنا رسالة</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" id="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" id="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">الموضوع</label>
+                                <input type="text" id="subject" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">رسالتك</label>
+                                <textarea id="message" class="form-textarea" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // --- How to make the form work ---
+        // Option 1: The simplest way (opens user's email app)
+        // const contactForm = document.getElementById('contactForm');
+        // contactForm.setAttribute('action', 'mailto:your-email@example.com?subject=New Message from MaalyPlus');
+        // contactForm.setAttribute('method', 'POST');
+        // contactForm.setAttribute('enctype', 'text/plain');
+
+        // Option 2: Recommended (Using a free service like Formspree)
+        // 1. Go to formspree.io and create a new form.
+        // 2. It will give you a URL like: https://formspree.io/f/your_unique_id
+        // 3. Uncomment the lines below and paste your URL.
+        
+        // const contactForm = document.getElementById('contactForm');
+        // contactForm.setAttribute('action', 'https://formspree.io/f/your_unique_id');
+        // contactForm.setAttribute('method', 'POST');
+        
+        // Simple submission message for now
+         document.getElementById('contactForm').addEventListener('submit', function(e) {
+             e.preventDefault(); // Prevent actual submission for this demo
+             alert('شكراً لتواصلك معنا! سنرد عليك في أقرب وقت ممكن.');
+             this.reset(); // Clear the form
+         });
+    </script>
+
+    <!-- MaalyPlus AI Chatbot -->
+    <script src="../chatbot.js"></script>
+</body>
+</html>

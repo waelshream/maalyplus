@@ -1,0 +1,20 @@
+# Netlify Redirects Configuration for MaalyPlus
+# This file fixes broken links and improves URL structure
+
+# Main redirects for cleaner URLs
+/blog                     /education/education.html           200
+/loans                    /loans/loans.html                   200
+/cards                    /cards/cards.html                   200
+/calculators              /calculators/calculators.html       200
+/compare                  /compare/compare.html               200
+/car-financing            /car-financing/car-financing.html   200
+/about                    /about-us.html                      200
+/contact                  /contact.html                       200
+
+# Legal pages
+/privacy                  /legal/privacy-policy.html          200
+/terms                    /legal/legal.html                   200
+/usage-policy             /legal/legal.html                   200
+
+# Fallback for 404
+/*                        /index.html                         404
